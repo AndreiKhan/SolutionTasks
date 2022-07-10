@@ -12,6 +12,8 @@ if (inputLineOne != null && inputLineTwo != null)
     int outputLineOne = int.Parse(inputLineOne);
     int outputLineTwo = int.Parse(inputLineTwo);
 
+    //-------------------------------------------------------------------------------------------------------------------------------
+
     // //Ищем большее число из двух
     // if (outputLineOne > outputLineTwo)
     // {
@@ -22,10 +24,14 @@ if (inputLineOne != null && inputLineTwo != null)
     //     Console.WriteLine("Max = " + outputLineTwo);
     // }
 
+    //-------------------------------------------------------------------------------------------------------------------------------
 
     // int maxNumber = Math.Max(outputLineOne, outputLineTwo);
     // Console.WriteLine("Max = " + Math.Max(outputLineOne, outputLineTwo));        //Второй вариант решения через Math.Max
 
+    //-------------------------------------------------------------------------------------------------------------------------------
 
     Console.WriteLine("Max = " + Math.Max(outputLineOne, outputLineTwo));           //Третий вариант черз Math.Max без создания переменной
+
+    //-------------------------------------------------------------------------------------------------------------------------------
 }

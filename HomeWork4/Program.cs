@@ -7,7 +7,7 @@ string? inputLineTwo = Console.ReadLine();
 string? inputLineThree = Console.ReadLine();
 
 //Проверяем ввели ли мы числа
-if (inputLineOne != null && inputLineTwo != null)
+if (inputLineOne != null && inputLineTwo != null && inputLineThree != null)
 {
     //Превраращаем их в целочисленные
     int outputLineOne = int.Parse(inputLineOne);

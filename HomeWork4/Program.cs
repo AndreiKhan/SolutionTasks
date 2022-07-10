@@ -1,4 +1,7 @@
-﻿//Вводим три числа
+﻿//------------------Задача 4--------------------
+//-------Определение большего числа из трех-----
+//----------------------------------------------
+//Вводим три числа
 string? inputLineOne = Console.ReadLine();
 string? inputLineTwo = Console.ReadLine();
 string? inputLineThree = Console.ReadLine();

@@ -4,46 +4,48 @@
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
-//Создаем метод нахождения второй цифры из трехзначного числа
-void secondNumber(int num)
-{
-    //Проверяем трехзначное ли это число
-    if ((999 >= num) && (num >= 100))
-    {
-        num = (num % 100) / 10;
-        Console.WriteLine("Вторая цифра из трехзачного числа: " + num);
-    }
-    else
-    {
-        Console.WriteLine("Это не трехзначное число");
-    }
-}
-try                                                                                         //Первый вариант
-{
-    Console.Write("Введите трехзачное число: ");
+// //Создаем метод нахождения второй цифры из трехзначного числа
+// void secondNumber(int num)
+// {
+//     //Проверяем трехзначное ли это число
+//     if ((999 >= num) && (num >= 100))
+//     {
+//         num = (num % 100) / 10;
+//         Console.WriteLine("Вторая цифра из трехзачного числа: " + num);
+//     }
+//     else
+//     {
+//         Console.WriteLine("Это не трехзначное число");
+//     }
+// }
+// try                                                                                         //Первый вариант
+// {
+//     Console.Write("Введите трехзначное число: ");
 
-    int number = int.Parse(Console.ReadLine());
+//     //Переводим полученную строку в int, чтобы выявить ошибку, если были введены цифры то все пройдет нормально
+//     int number = int.Parse(Console.ReadLine());
 
-    secondNumber(number);
-}
-catch(Exception)
-{
-    //Используем TryCatch для того чтобы выдавал нужное сообщение а не ошибку
-    Console.WriteLine("Это не трехзначное число");
-}
+//     //Передаем методу модуль числа методу
+//     secondNumber(Math.Abs(number));
+// }
+// catch(Exception)
+// {
+//     //Используем TryCatch для того чтобы выдавал нужное сообщение а не ошибку
+//     Console.WriteLine("Это не трехзначное число");
+// }
 
 //-------------------------------------------------------------------------------------------------------------------------------
 
 // //Создаем метод нахождения второй цифры из трехзначного числа
-// void secondNumber(string inputNumber)
+// void secondNumber(string inp)
 // {
 //     //переводим полученный string в char
-//     char[] charNumber = inputNumber.ToCharArray();
+//     char[] charNumber = inp.ToCharArray();
 
 //     //Проверяем треххзначное ли это число
 //     if (charNumber.Length == 3)
 //     {
-//         Console.WriteLine("Вторая цифра из трехзачного числа: " + charNumber[1]);            //Второй вариант
+//         Console.WriteLine("Вторая цифра из трехзачного числа: " + charNumber[1]);
 //     }
 //     else
 //     {
@@ -53,15 +55,15 @@ catch(Exception)
 
 // Console.Write("Введите трехзачное число: ");
 
-// try
+// try                                                                                          //Второй вариант
 // {
 //     string inputNumber = Console.ReadLine();
 
 //     //Переводим полученную строку в int, чтобы выявить ошибку, если были введены цифры то все пройдет нормально
 //     int number = int.Parse(inputNumber);
 
-//     //Обращаемся к методу
-//     secondNumber(inputNumber);
+//     //Передаем методу модуль числа методу
+//     secondNumber(Math.Abs(inputNumber));
 // }
 // catch(Exception)
 // {

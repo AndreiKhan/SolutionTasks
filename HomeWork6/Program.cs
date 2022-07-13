@@ -22,8 +22,12 @@ if (inputLine != null)
     
     //Раскладываем число в массиве
     char[] M = inputLine.ToCharArray();
+
+    //Переводим последнюю цифру в int
+    int number = (int)M[M.Length - 1] - 48;
+    
     //Берем число под последним индексом и проверяем четное ли оно 
-    if((M[M.Length - 1] % 2) == 0)
+    if ((number % 2) == 0)
     {
         Console.WriteLine(inputLine + " - Четное число");                       //Второй вариант через массив и if
     }

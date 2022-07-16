@@ -64,7 +64,7 @@ string inputLine = Console.ReadLine();
 
 int[,] readPoints()
 {
-    //достаем из введенно строки нужные координаты точки А
+    //достаем из введенной строки нужные координаты точки А
     string coordPointA = inputLine.Substring(0, inputLine.IndexOf(")"));
     coordPointA = coordPointA.Substring(coordPointA.IndexOf("(") + 1);
 
@@ -75,7 +75,7 @@ int[,] readPoints()
 
     int coordZA = int.Parse(coordPointA.Substring(coordPointA.LastIndexOf(",") + 1));
 
-    //достаем из введенно строки нужные координаты точки В
+    //достаем из введенной строки нужные координаты точки В
     string coordPointB = inputLine.Substring(inputLine.LastIndexOf("(") + 1);
     coordPointB = coordPointB.Substring(0, coordPointB.LastIndexOf(")"));
 
@@ -106,6 +106,7 @@ void calculateLength(int[,] coords)
     Console.WriteLine("Расстояние между точками в 3D пространстве равно: " + distance3D);
 }
 
+//Это двумерный массив
 int[,] arrayPoint = readPoints();
 
 calculateLength(arrayPoint);

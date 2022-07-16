@@ -60,7 +60,7 @@ for(int i = 1; i <= 9; i++)
 
 }
 
-//Создаем метод который проверит является ли введенное число палиндромом
+//Создаем метод который проверит является ли введенное число палиндромом, просматриваем наш словарь
 void palindromeDefinition(string fiveNumbers, int digits)
 {
     if(palindromes.ContainsValue(fiveNumbers))

@@ -4,8 +4,15 @@ Console.WriteLine("Введите число: ");
 string? inputLineNumber = Console.ReadLine();
 int inputNumber = int.Parse(inputLineNumber);
 
+int t;
+
+t = Environment.TickCount;
 Console.WriteLine(sumNums(inputNumber));
+Console.WriteLine("Simple time: {0} ms", Environment.TickCount - t);
+
+t = Environment.TickCount;
 Console.WriteLine(mulRec(inputNumber));
+Console.WriteLine("Simple time: {0} ms", Environment.TickCount - t);
 
 int sumNums(int num)
 {
